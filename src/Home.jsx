@@ -87,7 +87,7 @@ const Home = () => {
         </div>
 
         <video width="320" height="240" className='self-center' autoPlay muted loop>
-          <source src={videobrat2} type="video/mp4"  />
+          <source src={videobrat1} type="video/mp4"  />
         </video>
       </div>
 
@@ -132,14 +132,14 @@ const Home = () => {
           modal: 'customModal',
         }}
         styles={{
-          modal: { backgroundColor: '#9fd830' }
+          modal: { backgroundColor: '#9fd830', borderRadius:'10px' }
                 }}
         center>
 
         <div className='p-5 text-white flex flex-col gap-3 items-center font-bold'>
           <h2 className='text-[#c94ff2] font-extrabold'>MOONSHOT APP</h2>
           <h2 className='font-bold'>IOS & GOOGLE SHOP</h2>
-          <p className='self-start'>Step 1: Download app (hyperlink thisb josh https://moonshot.money/?ref=OMglvK7vbL)</p>
+          <p className='self-start'>Step 1: Download app (hyperlink this josh : <a href="https://moonshot.money/?ref=OMglvK7vbL" className='underline' target="_blank">Download app</a> )</p>
           <p className='self-start'>Step 2: Create Email</p>
           <p className='self-start'>Step 3: Press 'Search' </p>
           <p className='self-start'>Step 4: Enter ca: "adaifwodihfiowehfa"</p>
