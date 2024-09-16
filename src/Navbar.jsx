@@ -11,7 +11,7 @@ const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav className='px-10 md:px-20 flex py-4 justify-between items-center bg-black text-white font-semibold relative'>
+    <nav className='px-10 md:px-20 flex py-2 justify-between items-center bg-black text-white font-semibold relative'>
     <div className='bg-[#9fd830]'><img src={bratlogo} alt="bratlogo" className='w-32' /></div>
     <ul className='hidden lg:flex gap-6'>
     <li><Link to="/Home">Home</Link></li>

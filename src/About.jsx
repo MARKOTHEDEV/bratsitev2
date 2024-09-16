@@ -37,7 +37,7 @@ const About = () => {
         <p className='mr-5'>24/7 BRAT</p>
         <p className='mr-5'>THE RETAIL COIN</p>
         <p className='mr-5'>BRAT IS FOREVER</p>
-        <p className='mr-5'>KAMALA IS BRAT</p>
+        <p className='mr-5'>KAMALA IS BRAT</p>  
         <p className='mr-5'>BRAT IS FOREVER</p>
       </Marquee>
 

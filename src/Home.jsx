@@ -3,6 +3,7 @@ import { useState } from 'react'
 import videobrat2 from '/videobrat2.mp4'
 import videobrat1 from '/videobrat1.mp4'
 
+
 import howto1 from '/howto1.png'
 import howto2 from '/howto2.png'
 import howto3 from '/howto3.png'
@@ -11,6 +12,8 @@ import goblin from '/goblin.png'
 import cap from '/cap.png'
 import hat from '/hat.png'
 import girlbrat from '/girlbrat.jpg'
+import bratstacked from '/bratstacked.png'
+import moonshotapp from '/moonshotapp.jpg'
 
 import connectwallet from '/connectwallet.png'
 import { FaTelegramPlane } from "react-icons/fa";
@@ -21,18 +24,24 @@ import { IoIosGlobe } from "react-icons/io";
 import { FaDiscord } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
 import Marquee from "react-fast-marquee";
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
+import './App.css'
 
 const Home = () => {
+  const [open, setOpen] = useState(false);
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);  
 
   return (
     <div>
         <div className='relative overflow-x-hidden'>
       <main className='bg-[#9fd830] px-10 md:px-20 flex flex-col md:flex-row  justify-center items-center gap-8 py-32'>
         <img src={goblin} alt="logo" />
-        <div>
-          <h1 className='text-[3rem] md:text-[4rem] text-white font-bold'>$BRAT</h1>
-          <h1 className='text-[3rem] md:text-[4rem] text-white font-bold'>$BRAT</h1>
-          <button className='bg-black px-6 py-3 rounded-xl  text-[#c94ff2]'>Order Brat</button>
+        <div className='flex flex-col gap-4 items-center'>
+        <img src={bratstacked} className='w-96' alt="stacked text" />
+          <button className='bg-black px-6 py-3 rounded-xl  text-[#c94ff2]' onClick={onOpenModal}>Order Brat</button>
           <div className='text-[#c94ff2] flex mt-5 text-2xl md:text-3xl gap-4'>
             <FaTelegramPlane />
             <FaXTwitter />
@@ -44,7 +53,7 @@ const Home = () => {
       
 
       <section >
-      <Marquee className='flex bg-[#c94ff2] text-white justify-between px-36 py-3 gap-5'>
+      <Marquee className='flex bg-[#c94ff2] text-white justify-between px-36 py-3 gap-5 font-extrabold'>
         <p className='mr-5'>365/365/365</p>
         <p className='mr-5'>BRAT SUMMER</p>
         <p className='mr-5'>24/7 BRAT</p>
@@ -52,6 +61,8 @@ const Home = () => {
         <p className='mr-5'>BRAT IS FOREVER</p>
         <p className='mr-5'>KAMALA IS BRAT</p>
         <p className='mr-5'>BRAT IS FOREVER</p>
+        <p className='mr-5'>BRAT IS AUTHENTICITY</p>
+        <p className='mr-5'>BRAT IS WINNING</p>
         </Marquee>
       </section>
 
@@ -116,6 +127,27 @@ const Home = () => {
       </div>
 
     </div>
+
+    <Modal open={open} onClose={onCloseModal} classNames={{
+          modal: 'customModal',
+        }}
+        styles={{
+          modal: { backgroundColor: '#9fd830' }
+                }}
+        center>
+
+        <div className='p-5 text-white flex flex-col gap-3 items-center font-bold'>
+          <h2 className='text-[#c94ff2] font-extrabold'>MOONSHOT APP</h2>
+          <h2 className='font-bold'>IOS & GOOGLE SHOP</h2>
+          <p className='self-start'>Step 1: Download app (hyperlink thisb josh https://moonshot.money/?ref=OMglvK7vbL)</p>
+          <p className='self-start'>Step 2: Create Email</p>
+          <p className='self-start'>Step 3: Press 'Search' </p>
+          <p className='self-start'>Step 4: Enter ca: "adaifwodihfiowehfa"</p>
+          <img src={moonshotapp} className='rounded-md' alt="" />
+        </div>
+    </Modal>
+
+
     </div>
   )
 }
