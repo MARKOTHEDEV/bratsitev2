@@ -14,7 +14,7 @@ const Howtoguide = () => {
     <div className='text-white flex items-center md:items-start flex-col gap-6'>
       <p><span className='font-bold'>Launch date </span>- Very Soon</p>
       <p><span className='font-bold'>Announcements </span>- Telegram</p>
-      <a href="" className='font-bold underline'>Join Now</a>
+      <a href="http://t.me/bratcoincto" className='font-bold underline'>Join Now</a>
 
       <div className='text-[#c94ff2] text-3xl flex gap-4'>
          <a href="http://t.me/bratcoincto" target='_blank'><FaTelegramPlane className='cursor-pointer' /></a> 
