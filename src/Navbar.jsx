@@ -12,14 +12,13 @@ const Navbar = () => {
 
   return (
     <nav className='px-10 md:px-20 flex py-2 justify-between items-center bg-black text-white font-semibold relative'>
-    <div className='bg-[#9fd830]'><img src={bratlogo} alt="bratlogo" className='w-32' /></div>
+    <div className='bg-[#9fd830]'><img src={bratlogo} alt="bratlogo" className='w-14' /></div>
     <ul className='hidden lg:flex gap-6 transition-all ease-in'>
     <li className='hover:text-[#c94ff2]'><Link to="/Home">Home</Link></li>
     <li className='hover:text-[#c94ff2]'><Link to="/About">About</Link></li>
       <li className='hover:text-[#c94ff2] cursor-pointer'> <a href="https://pfp.bratsummer.xyz/">Brat Tools</a></li>
-      <li className='hover:text-[#c94ff2] cursor-pointer'>Shop</li>
       <li className='text-[#c94ff2] cursor-pointer'><Link to='/Howtoguide'>How to Guide</Link></li>
-      <li className='hover:text-[#c94ff2] cursor-pointer'>FAQ</li>
+
     </ul>
     <div className='hidden lg:flex gap-2 items-center '>
       <p className='border-r-2 px-5 cursor-pointer'>cart</p>
