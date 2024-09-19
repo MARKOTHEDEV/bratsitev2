@@ -14,6 +14,7 @@ import hat from '/hat.png'
 import girlbrat from '/girlbrat.jpg'
 import bratstacked from '/bratstacked.png'
 import moonshotapp from '/moonshotapp.jpg'
+import poap from '/poap.jpg'
 
 import connectwallet from '/connectwallet.png'
 import { FaTelegramPlane } from "react-icons/fa";
@@ -67,7 +68,7 @@ const Home = () => {
       </section>
 
       <div className='bg-black lg:px-28 md:px-20 px-10 flex-col-reverse lg:flex-row flex justify-between text-white py-20 gap-8'>
-        <div className='flex flex-col gap-5'> 
+        <div className='flex flex-col gap-12 lg:w-1/2'> 
           <h2 className='font-bold text-[4.2rem] '>WHAT IS <span className='text-[#9fd830]'>$BRAT</span> ?</h2>
           <h5 className='font-bold'><span className='text-[#9fd830]'>$BRAT</span> is the retail coin of the bull run</h5>
           <p>
@@ -80,15 +81,17 @@ const Home = () => {
             Be early, be Brat or be late <br />
             the choice is yours
           </p>
-          <div className='flex flex-col md:flex-row gap-5'>
+          <div className='flex flex-col md:flex-row md:gap-20 gap-5'>
             <button className='border border-[#9fd830] text-[#9fd830] font-bold bg-gray-800 rounded-xl px-7 py-1'>Buy $BRAT</button>
             <button className='border border-[#c94ff2] text-[#c94ff2] font-bold bg-gray-800 rounded-xl px-7 py-1'> Join the community </button>
           </div>
         </div>
 
-        <video width="320" height="240" className='self-center' autoPlay muted loop>
+      <div className='lg:w-1/2 flex justify-center'>
+      <video  className='self-center w-full' autoPlay muted loop>
           <source src={videobrat1} type="video/mp4"  />
         </video>
+      </div>
       </div>
 
       <aside className='bg-[#9fd830] md:px-20 px-10 py-24 flex flex-col items-center gap-10'>
@@ -104,6 +107,34 @@ const Home = () => {
           <img src={connectwallet} className='w-full md:w-1/2' alt="logo" />
         </div>
       </aside>
+
+      <div className='px-10 md:px-20 text-white flex flex-col gap-8 items-center justify-center font-bold bg-[#9fd830] py-16'>
+          <h2 className='text-[#c94ff2] font-extrabold'>MOONSHOT APP</h2>
+          <h2 className='font-bold'>IOS & GOOGLE SHOP</h2>
+          <p>Step 1: Download app ( hyperlink this josh : <a href="https://moonshot.money/?ref=OMglvK7vbL" className='underline' target="_blank">Download app</a> )</p>
+          <p>Step 2: Create Email</p>
+          <p>Step 3: Press 'Search' </p>
+          <p>Step 4: Enter ca: "adaifwodihfiowehfa"</p>
+          <img src={moonshotapp} className='rounded-md' alt="" />
+      </div>
+
+      <div className='bg-black px-10 md:px-20 flex flex-col md:flex-row py-16 justify-center gap-24 items-center'>
+        <div className='flex flex-col items-center gap-4'>
+          <a target='_blank' href="https://x.com/intent/post?text=This+is+proof+of+my+entry++and+participation+in+%40BratCoinCTO+Whitelist+Giveaway.%0A%0ABrat+Launching+Soon%3A+Be+Early+or+Be+Forgotten.%0AOne+Minute+Now%2C+Change+Your+Life+Forever.%0A%0AID%3A+0032135%0A%0Apoap.brat.meme%0Ahttps://t.me/BratCoinCTO "><img src={poap} alt="poap" /></a>
+          <p className='text-[#c94ff2]'>Press poap to enter giveaway</p>
+        </div>
+
+        <div className='text-white flex items-center md:items-start flex-col gap-6'>
+          <p><span className='font-bold'>Launch date </span>- Very Soon</p>
+          <p><span className='font-bold'>Announcements </span>- Telegram</p>
+          <a href="" className='font-bold underline'>Join Now</a>
+
+          <div className='text-[#c94ff2] text-3xl flex gap-4'>
+            <FaTelegramPlane />
+            <a href="https://twitter.com/intent/tweet?text=Hello%20world%21"><FaXTwitter /></a>
+          </div>
+        </div>
+      </div>
 
       <div  className='bg-[#9fd830] px-16 flex flex-col gap-9'>
           <h2 className='font-bold text-[3rem]'>SHOP $BRAT</h2>
@@ -128,25 +159,7 @@ const Home = () => {
 
     </div>
 
-    <Modal open={open} onClose={onCloseModal} classNames={{
-          modal: 'customModal',
-        }}
-        styles={{
-          modal: { backgroundColor: '#9fd830', borderRadius:'10px' }
-                }}
-        center>
-
-        <div className='p-5 text-white flex flex-col gap-3 items-center font-bold'>
-          <h2 className='text-[#c94ff2] font-extrabold'>MOONSHOT APP</h2>
-          <h2 className='font-bold'>IOS & GOOGLE SHOP</h2>
-          <p className='self-start'>Step 1: Download app (hyperlink this josh : <a href="https://moonshot.money/?ref=OMglvK7vbL" className='underline' target="_blank">Download app</a> )</p>
-          <p className='self-start'>Step 2: Create Email</p>
-          <p className='self-start'>Step 3: Press 'Search' </p>
-          <p className='self-start'>Step 4: Enter ca: "adaifwodihfiowehfa"</p>
-          <img src={moonshotapp} className='rounded-md' alt="" />
-        </div>
-    </Modal>
-
+    
 
     </div>
   )

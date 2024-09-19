@@ -13,13 +13,13 @@ const Navbar = () => {
   return (
     <nav className='px-10 md:px-20 flex py-2 justify-between items-center bg-black text-white font-semibold relative'>
     <div className='bg-[#9fd830]'><img src={bratlogo} alt="bratlogo" className='w-32' /></div>
-    <ul className='hidden lg:flex gap-6'>
-    <li><Link to="/Home">Home</Link></li>
-    <li><Link to="/About">About</Link></li>
-      <li>Brat Tools</li>
-      <li>Shop</li>
+    <ul className='hidden lg:flex gap-6 transition-all ease-in'>
+    <li className='hover:text-[#c94ff2]'><Link to="/Home">Home</Link></li>
+    <li className='hover:text-[#c94ff2]'><Link to="/About">About</Link></li>
+      <li className='hover:text-[#c94ff2]'>Brat Tools</li>
+      <li className='hover:text-[#c94ff2]'>Shop</li>
       <li className='text-[#c94ff2]'>How to Guide</li>
-      <li>FAQ</li>
+      <li className='hover:text-[#c94ff2]'>FAQ</li>
     </ul>
     <div className='hidden lg:flex gap-2 items-center '>
       <p className='border-r-2 px-5'>cart</p>
@@ -34,7 +34,7 @@ const Navbar = () => {
 
           <ul className='flex flex-col gap-4 items-center'>
           <IoCloseSharp onClick={() => {setIsActive(!isActive)}} className='text-2xl' />
-          <li><Link to="/Home" onClick={() => {setIsActive(!isActive)}}>Home</Link></li>
+          <li ><Link to="/Home" onClick={() => {setIsActive(!isActive)}} >Home</Link></li>
           <li><Link to="/About" onClick={() => {setIsActive(!isActive)}}>About</Link></li>
               <li>Brat Tools</li>
               <li>Shop</li>
