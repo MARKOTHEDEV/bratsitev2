@@ -17,7 +17,7 @@ const Howtoguide = () => {
       <a href="" className='font-bold underline'>Join Now</a>
 
       <div className='text-[#c94ff2] text-3xl flex gap-4'>
-        <FaTelegramPlane className='cursor-pointer' />
+         <a href="http://t.me/bratcoincto" target='_blank'><FaTelegramPlane className='cursor-pointer' /></a> 
         <a href="https://twitter.com/intent/tweet?text=Hello%20world%21"><FaXTwitter /></a>
       </div>
     </div>
