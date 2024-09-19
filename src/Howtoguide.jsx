@@ -1,5 +1,6 @@
 import React from 'react'
 import poap2 from '/poap.png'
+import rabbit from '/rabbit.png'
 
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -15,7 +16,10 @@ const Howtoguide = () => {
     <div className='text-white flex items-center md:items-start flex-col gap-6'>
       <p className='text-[#9fd830]'><span className='font-bold text-[#9fd830]'>Launch date </span>- Very Soon</p>
       <p className='text-[#9fd830]'><span className='font-bold text-[#9fd830]'>Announcements </span>- Telegram</p>
-      <a href="http://t.me/bratcoincto" className='font-bold underline text-[#9fd830]'>Join Now</a>
+      <a href="http://t.me/bratcoincto" className='font-bold underline text-[#9fd830] flex gap-2 items-center'>
+          Join Now
+          <img src={rabbit} alt="rabbit" className='w-5' />
+      </a>
 
       <div className='text-[#c94ff2] text-3xl flex gap-4'>
          <a href="http://t.me/bratcoincto" target='_blank'><FaTelegramPlane className='cursor-pointer' /></a> 

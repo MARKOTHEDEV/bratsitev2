@@ -14,7 +14,7 @@ import goblin from '/goblin.png'
 import cap from '/cap.png'
 import hat from '/hat.png'
 import girlbrat from '/girlbrat.jpg'
-import bratstacked from '/bratstacked.png'
+import stackedbrat from '/stackedbrat.png'
 
 import connectwallet from '/connectwallet.png'
 import { FaTelegramPlane } from "react-icons/fa";
@@ -41,7 +41,7 @@ const Home = () => {
       <main className='bg-[#9fd830] px-10 md:px-20 flex flex-col md:flex-row  justify-center items-center gap-8 py-32'>
         <img src={goblin} alt="logo" />
         <div className='flex flex-col gap-4 items-center'>
-        <img src={bratstacked} className='w-96' alt="stacked text" />
+        <img src={stackedbrat} className='w-96' alt="stacked text" />
           <button className='bg-black px-6 py-3 rounded-xl  text-[#c94ff2]' ><Link to='/Buybrat'>Buy Brat</Link></button>
           <div className='text-[#c94ff2] flex mt-5 text-2xl md:text-3xl gap-4'>
             <a href="http://t.me/bratcoincto" target='_blank'><FaTelegramPlane /></a> 
@@ -78,8 +78,8 @@ const Home = () => {
             Those that have never bought crypto before. <br />
             Brat and it's community will brigde this gap. <br /><br />
             Brat is a way of life. <br />
-            Be early, be Brat or be late <br />
-            the choice is yours
+            Be Early, Be Brat. Or... Be Late. <br />
+            The Choice is Yours
           </p>
           <div className='flex flex-col md:flex-row md:gap-20 gap-5'>
             <button className='border border-[#9fd830] text-[#9fd830] font-bold bg-gray-800 rounded-xl px-7 py-1'>Buy $BRAT</button>
@@ -95,14 +95,14 @@ const Home = () => {
       </div>
 
       <aside className='bg-[#9fd830] md:px-20 px-10 py-24 flex flex-col items-center gap-10'>
-        <h2 className='text-[#c94ff2] text-[3rem] font-bold text-center'>HOW TO BUY $BRAT</h2>
-        <div className='flex flex-col items-center lg:flex-row justify-between gap-5'>
-          <div className='grid md:grid-cols-2 md:grid-rows-2 grid-rows-1 grid-cols-1 w-full md-w-2/3 lg:w-1/2 gap-4'>
+        <h2 className='text-[#c94ff2] text-[4.2rem] font-bold text-center'>HOW TO BUY $BRAT</h2>
+        <div className='flex flex-col items-center justify-center'>
+          {/* <div className='grid md:grid-cols-2 md:grid-rows-2 grid-rows-1 grid-cols-1 w-full md-w-2/3 lg:w-1/2 gap-4'>
             <img src={howto1} alt="pic" />
             <img src={howto2} alt="logo" />
             <img src={howto3} alt="logo" />
             <img src={howto4} alt="logo" />
-          </div>
+          </div> */}
 
           <img src={connectwallet} className='w-full md:w-1/2' alt="logo" />
         </div>
@@ -110,8 +110,8 @@ const Home = () => {
 
 
 
-      <div  className='bg-[#9fd830] px-16 flex flex-col gap-9'>
-          <h2 className='font-bold text-[3rem]'>SHOP $BRAT</h2>
+      <div  className='bg-[#9fd830] px-16 flex flex-col gap-9 items-center'>
+          {/* <h2 className='font-bold text-[3rem]'>SHOP $BRAT</h2>
           <div className='flex justify-center md:justify-end text-3xl'><IoIosGlobe /></div>
           <div className='flex justify-between  flex-col lg:flex-row gap-4 lg:gap-0'>
             <div className='flex flex-col items-center gap-8'>
@@ -123,11 +123,11 @@ const Home = () => {
 
           <video width="320" height="240" className='self-center' autoPlay muted loop>
             <source src={videobrat1} type="video/mp4"  />
-          </video>
-          <div className='text-white font-bold flex md:justify-end justify-center items-center  gap-5 text-2xl'>
-            <FaDiscord />
-            <p>blur</p>
-            <FaXTwitter />
+          </video> */}
+          <img src={stackedbrat} alt=""  className='w-1/2'/>
+          <div className='text-white font-bold flex md:justify-end justify-center items-center py-8  gap-5 text-2xl'>
+          <a href="http://t.me/bratcoincto" target='_blank'><FaTelegramPlane /></a> 
+          <a href="https://x.com/bratcoincto" target='_blank'><FaXTwitter /></a> 
           </div>
       </div>
 

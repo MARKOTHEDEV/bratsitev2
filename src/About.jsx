@@ -3,6 +3,10 @@ import { useState } from 'react'
 import connectwallet from '/connectwallet.png'
 import { FaXTwitter } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
+
+import stackedbrat from '/stackedbrat.png'
+
 import Marquee from "react-fast-marquee";
 
 const About = () => {
@@ -12,7 +16,7 @@ const About = () => {
 
   return (
     <div className='border-t-4 border-[#9fd830]'>
-        <div className='px-10 md:px-20 bg-black py-20 text-white flex justify-between flex-col lg:flex-row gap-6'>
+        <div className='px-10 md:px-20 bg-black py-20 text-white flex justify-center flex-col lg:flex-row gap-10'>
         <div>
           <h2 className='text-[3rem] font-bold mb-5'>ABOUT <br /> <span className='text-[#9fd830]'>$BRAT</span> </h2>
           <p className='font-semibold'>"the retail coin of this bull run and beyond"</p>
@@ -31,15 +35,15 @@ const About = () => {
         </div>
       </div>
 
-      <Marquee className='flex bg-[#c94ff2] text-white justify-between px-36 py-3 gap-5'>
-        <p className='mr-5'>365/365/365</p>
+      <div className='flex bg-[#c94ff2] text-white justify-between py-3 gap-5'>
+        <p className='mx-5'>365/365/365</p>
         <p className='mr-5'>BRAT SUMMER</p>
         <p className='mr-5'>24/7 BRAT</p>
         <p className='mr-5'>THE RETAIL COIN</p>
         <p className='mr-5'>BRAT IS FOREVER</p>
         <p className='mr-5'>KAMALA IS BRAT</p>  
         <p className='mr-5'>BRAT IS FOREVER</p>
-      </Marquee>
+      </div>
 
       <div className='bg-black px-10 md:px-20 text-white py-20 flex flex-col gap-4'>
         <h2 className='font-bold'><span className='text-[#9fd830]'>$BRAT</span> Etymology</h2>
@@ -50,9 +54,9 @@ const About = () => {
         <p>3. The concept that promotes authenticity, which is the most powerful force in the universe</p>
       </div>
 
-      <Marquee className='flex bg-[#9fd830] text-[#c94ff2] justify-between px-36 py-3 gap-5'>
+      {/* <Marquee className='flex bg-[#9fd830] text-[#c94ff2] justify-between px-36 py-3 gap-5'>
         <p className='font-bold'>BRAT IS AUTHENTICITY, AUTHENTICITY IS THE STRONGEST FORCE IN THE UNIVERSE, BRAT IS FOREVER.</p>
-      </Marquee>
+      </Marquee> */}
 
       <div className='bg-black flex justify-center px-10 py-16 gap-9 flex-col items-center'>
         <h2 className='text-[#c94ff2] text-[2rem] md:text-[3rem] font-bold'>BUY $BRAT EARLY</h2>
@@ -60,15 +64,10 @@ const About = () => {
       </div>
 
       <div className='bg-[#9fd830] px-20 flex justify-center  items-center flex-col py-16'>
-        <div className='text-white text-[5rem] md:text-[8rem] font-bold '>
-          <h2>$BRAT</h2>
-          <h2 className=' -translate-y-20 translate-x-6 md:-translate-y-28 md:translate-x-9'>$BRAT</h2>
-          <h2 className=' -translate-y-40 translate-x-14 md:-translate-y-56 md:translate-x-20'>$BRAT</h2>
-        </div>
+       <img src={stackedbrat} alt="" />
         <div className='text-white font-bold flex md:justify-end md:items-end justify-center items-center  gap-5 text-2xl w-full'>
-            <FaDiscord />
-            <p>blur</p>
-            <FaXTwitter />
+        <a href="http://t.me/bratcoincto" target='_blank'><FaTelegramPlane /></a> 
+        <a href="https://x.com/bratcoincto" target='_blank'><FaXTwitter /></a> 
           </div>
       </div>
     </div>
