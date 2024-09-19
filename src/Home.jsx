@@ -44,8 +44,8 @@ const Home = () => {
         <img src={bratstacked} className='w-96' alt="stacked text" />
           <button className='bg-black px-6 py-3 rounded-xl  text-[#c94ff2]' ><Link to='/Buybrat'>Order Brat</Link></button>
           <div className='text-[#c94ff2] flex mt-5 text-2xl md:text-3xl gap-4'>
-            <a href="http://t.me/bratcoincto" target='blank'><FaTelegramPlane /></a> 
-            <FaXTwitter />
+            <a href="http://t.me/bratcoincto" target='_blank'><FaTelegramPlane /></a> 
+            <a href="https://x.com/bratcoincto" target='_blank'><FaXTwitter /></a> 
             <FiInstagram />
             <FaTiktok />
           </div>
