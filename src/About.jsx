@@ -11,7 +11,7 @@ const About = () => {
     const [isActive, setIsActive] = useState(false);
 
   return (
-    <div>
+    <div className='border-t-4 border-[#9fd830]'>
         <div className='px-10 md:px-20 bg-black py-20 text-white flex justify-between flex-col lg:flex-row gap-6'>
         <div>
           <h2 className='text-[3rem] font-bold mb-5'>ABOUT <br /> <span className='text-[#9fd830]'>$BRAT</span> </h2>

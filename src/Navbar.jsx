@@ -12,7 +12,7 @@ const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav className='px-10 md:px-20 flex py-2 justify-between items-center bg-black text-white font-semibold relative'>
+    <nav className='px-10 md:px-20 flex py-2 justify-between items-center bg-black text-white font-semibold relative '>
     <div className='bg-[#9fd830]'><img src={bratlogo} alt="bratlogo" className='w-14' /></div>
     <ul className='hidden lg:flex gap-6 transition-all ease-in'>
     <li className='hover:text-[#c94ff2]'><Link to="/Home">Home</Link></li>
@@ -22,7 +22,7 @@ const Navbar = () => {
 
     </ul>
     <div className='hidden lg:flex gap-2 items-center '>
-      <p className='border-r-2 px-5 cursor-pointer flex items-center gap-2'>ca : <span className='text-green-400'>Comimg Soon</span>  <FiCopy /></p>
+      <p className='border-r-2 px-5 cursor-pointer flex items-center gap-2'>ca: <span className='text-[#c94ff2]'>Comimg Soon</span>  <FiCopy className=' text-[#9fd830]' /></p>
       <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm'><Link to='/Buybrat'>Buy Brat</Link></button>
     </div>
     <GiHamburgerMenu onClick={() => {setIsActive(!isActive)}} className='text-[#c94ff2]  lg:hidden' />
