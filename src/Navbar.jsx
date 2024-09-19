@@ -16,7 +16,7 @@ const Navbar = () => {
     <ul className='hidden lg:flex gap-6 transition-all ease-in'>
     <li className='hover:text-[#c94ff2]'><Link to="/Home">Home</Link></li>
     <li className='hover:text-[#c94ff2]'><Link to="/About">About</Link></li>
-      <li className='hover:text-[#c94ff2] cursor-pointer'>Brat Tools</li>
+      <li className='hover:text-[#c94ff2] cursor-pointer'> <a href="https://pfp.bratsummer.xyz/">Brat Tools</a></li>
       <li className='hover:text-[#c94ff2] cursor-pointer'>Shop</li>
       <li className='text-[#c94ff2] cursor-pointer'><Link to='/Howtoguide'>How to Guide</Link></li>
       <li className='hover:text-[#c94ff2] cursor-pointer'>FAQ</li>
@@ -36,7 +36,7 @@ const Navbar = () => {
           <IoCloseSharp onClick={() => {setIsActive(!isActive)}} className='text-2xl' />
           <li ><Link to="/Home" onClick={() => {setIsActive(!isActive)}} >Home</Link></li>
           <li><Link to="/About" onClick={() => {setIsActive(!isActive)}}>About</Link></li>
-              <li>Brat Tools</li>
+              <li><a href="https://pfp.bratsummer.xyz/">Brat Tools</a></li>
               <li>Shop</li>
               <li className='text-[#c94ff2]' onClick={() => {setIsActive(!isActive)}}><Link to='/Howtoguide'>How to Guide</Link></li>
               <li>FAQ</li>
