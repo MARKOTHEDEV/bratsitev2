@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import videobrat2 from '/videobrat2.mp4'
 import videobrat1 from '/videobrat1.mp4'
+import {Link}  from 'react-router-dom'
+
 
 
 import howto1 from '/howto1.png'
@@ -13,8 +15,6 @@ import cap from '/cap.png'
 import hat from '/hat.png'
 import girlbrat from '/girlbrat.jpg'
 import bratstacked from '/bratstacked.png'
-import moonshotapp from '/moonshotapp.jpg'
-import poap from '/poap.jpg'
 
 import connectwallet from '/connectwallet.png'
 import { FaTelegramPlane } from "react-icons/fa";
@@ -42,7 +42,7 @@ const Home = () => {
         <img src={goblin} alt="logo" />
         <div className='flex flex-col gap-4 items-center'>
         <img src={bratstacked} className='w-96' alt="stacked text" />
-          <button className='bg-black px-6 py-3 rounded-xl  text-[#c94ff2]' onClick={onOpenModal}>Order Brat</button>
+          <button className='bg-black px-6 py-3 rounded-xl  text-[#c94ff2]' ><Link to='/Buybrat'>Order Brat</Link></button>
           <div className='text-[#c94ff2] flex mt-5 text-2xl md:text-3xl gap-4'>
             <FaTelegramPlane />
             <FaXTwitter />
@@ -108,33 +108,7 @@ const Home = () => {
         </div>
       </aside>
 
-      <div className='px-10 md:px-20 text-white flex flex-col gap-8 items-center justify-center font-bold bg-[#9fd830] py-16'>
-          <h2 className='text-[#c94ff2] font-extrabold'>MOONSHOT APP</h2>
-          <h2 className='font-bold'>IOS & GOOGLE SHOP</h2>
-          <p>Step 1: Download app ( hyperlink this josh : <a href="https://moonshot.money/?ref=OMglvK7vbL" className='underline' target="_blank">Download app</a> )</p>
-          <p>Step 2: Create Email</p>
-          <p>Step 3: Press 'Search' </p>
-          <p>Step 4: Enter ca: "adaifwodihfiowehfa"</p>
-          <img src={moonshotapp} className='rounded-md' alt="" />
-      </div>
 
-      <div className='bg-black px-10 md:px-20 flex flex-col md:flex-row py-16 justify-center gap-24 items-center'>
-        <div className='flex flex-col items-center gap-4'>
-          <a target='_blank' href="https://x.com/intent/post?text=This+is+proof+of+my+entry++and+participation+in+%40BratCoinCTO+Whitelist+Giveaway.%0A%0ABrat+Launching+Soon%3A+Be+Early+or+Be+Forgotten.%0AOne+Minute+Now%2C+Change+Your+Life+Forever.%0A%0AID%3A+0032135%0A%0Apoap.brat.meme%0Ahttps://t.me/BratCoinCTO "><img src={poap} alt="poap" /></a>
-          <p className='text-[#c94ff2]'>Press poap to enter giveaway</p>
-        </div>
-
-        <div className='text-white flex items-center md:items-start flex-col gap-6'>
-          <p><span className='font-bold'>Launch date </span>- Very Soon</p>
-          <p><span className='font-bold'>Announcements </span>- Telegram</p>
-          <a href="" className='font-bold underline'>Join Now</a>
-
-          <div className='text-[#c94ff2] text-3xl flex gap-4'>
-            <FaTelegramPlane />
-            <a href="https://twitter.com/intent/tweet?text=Hello%20world%21"><FaXTwitter /></a>
-          </div>
-        </div>
-      </div>
 
       <div  className='bg-[#9fd830] px-16 flex flex-col gap-9'>
           <h2 className='font-bold text-[3rem]'>SHOP $BRAT</h2>

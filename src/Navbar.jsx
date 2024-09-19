@@ -16,14 +16,14 @@ const Navbar = () => {
     <ul className='hidden lg:flex gap-6 transition-all ease-in'>
     <li className='hover:text-[#c94ff2]'><Link to="/Home">Home</Link></li>
     <li className='hover:text-[#c94ff2]'><Link to="/About">About</Link></li>
-      <li className='hover:text-[#c94ff2]'>Brat Tools</li>
-      <li className='hover:text-[#c94ff2]'>Shop</li>
-      <li className='text-[#c94ff2]'>How to Guide</li>
-      <li className='hover:text-[#c94ff2]'>FAQ</li>
+      <li className='hover:text-[#c94ff2] cursor-pointer'>Brat Tools</li>
+      <li className='hover:text-[#c94ff2] cursor-pointer'>Shop</li>
+      <li className='text-[#c94ff2] cursor-pointer'><Link to='/Howtoguide'>How to Guide</Link></li>
+      <li className='hover:text-[#c94ff2] cursor-pointer'>FAQ</li>
     </ul>
     <div className='hidden lg:flex gap-2 items-center '>
-      <p className='border-r-2 px-5'>cart</p>
-      <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm'>Buy Brat</button>
+      <p className='border-r-2 px-5 cursor-pointer'>cart</p>
+      <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm'><Link to='/Buybrat'>Buy Brat</Link></button>
     </div>
     <GiHamburgerMenu onClick={() => {setIsActive(!isActive)}} className='text-[#c94ff2]  lg:hidden' />
 
@@ -38,13 +38,13 @@ const Navbar = () => {
           <li><Link to="/About" onClick={() => {setIsActive(!isActive)}}>About</Link></li>
               <li>Brat Tools</li>
               <li>Shop</li>
-              <li className='text-[#c94ff2]'>How to Guide</li>
+              <li className='text-[#c94ff2]'><Link to='/Howtoguide'>How to Guide</Link></li>
               <li>FAQ</li>
             </ul>
     
             <div className='flex gap-2 flex-col items-center '>
               <p>cart</p>
-              <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm'>Buy Brat</button>
+              <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm'><Link to='/Buybrat'>Buy Brat</Link></button>
             </div>
           </div>:
           <></>
