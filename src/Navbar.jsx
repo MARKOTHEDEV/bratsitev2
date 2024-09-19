@@ -4,6 +4,7 @@ import {Link}  from 'react-router-dom'
 import bratlogo from '/bratlogo.jpg'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
+import { FiCopy } from "react-icons/fi";
 
 
 
@@ -21,7 +22,7 @@ const Navbar = () => {
 
     </ul>
     <div className='hidden lg:flex gap-2 items-center '>
-      <p className='border-r-2 px-5 cursor-pointer'>cart</p>
+      <p className='border-r-2 px-5 cursor-pointer flex items-center gap-2'>ca : <span className='text-green-400'>Comimg Soon</span>  <FiCopy /></p>
       <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm'><Link to='/Buybrat'>Buy Brat</Link></button>
     </div>
     <GiHamburgerMenu onClick={() => {setIsActive(!isActive)}} className='text-[#c94ff2]  lg:hidden' />
@@ -42,8 +43,8 @@ const Navbar = () => {
             </ul>
     
             <div className='flex gap-2 flex-col items-center '>
-              <p>cart</p>
-              <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm' onClick={() => {setIsActive(!isActive)}}><Link to='/Buybrat'>Buy Brat</Link></button>
+            <p className='px-5 cursor-pointer flex items-center gap-2'>ca : <span className='text-green-400'>Comimg Soon</span>  <FiCopy /></p>
+            <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm' onClick={() => {setIsActive(!isActive)}}><Link to='/Buybrat'>Buy Brat</Link></button>
             </div>
           </div>:
           <></>
