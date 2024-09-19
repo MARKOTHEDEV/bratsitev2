@@ -38,13 +38,13 @@ const Navbar = () => {
           <li><Link to="/About" onClick={() => {setIsActive(!isActive)}}>About</Link></li>
               <li>Brat Tools</li>
               <li>Shop</li>
-              <li className='text-[#c94ff2]'><Link to='/Howtoguide'>How to Guide</Link></li>
+              <li className='text-[#c94ff2]' onClick={() => {setIsActive(!isActive)}}><Link to='/Howtoguide'>How to Guide</Link></li>
               <li>FAQ</li>
             </ul>
     
             <div className='flex gap-2 flex-col items-center '>
               <p>cart</p>
-              <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm'><Link to='/Buybrat'>Buy Brat</Link></button>
+              <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm' onClick={() => {setIsActive(!isActive)}}><Link to='/Buybrat'>Buy Brat</Link></button>
             </div>
           </div>:
           <></>
