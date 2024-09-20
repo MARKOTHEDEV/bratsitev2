@@ -15,9 +15,17 @@ const Navbar = () => {
     <nav className='px-10 md:px-20 flex py-2 justify-between items-center bg-black text-white font-semibold relative '>
     <a
     href='/'
-    className='bg-[#9fd830] block'><img src={'/logo2.jpeg'} alt="bratlogo" className='w-[100px]' /></a>
+    className='bg-[#9fd830] block'><img src={
+      // !location.pathname.includes('Howtoguide')?
+      // bratlogo:'/logo2.jpeg'
+      bratlogo
+    } alt="bratlogo" className={
+      // location.pathname.includes('Howtoguide')?
+        // 'w-[100px]':'w-14'
+        'w-14'
+      } /></a>
     {
-       !location.pathname.includes('Howtoguide')?
+       false?
        <ul className='hidden lg:flex gap-6 transition-all ease-in'>
        <li className='hover:text-[#c94ff2]'><Link to="/Home">Home</Link></li>
        <li className='hover:text-[#c94ff2]'><Link to="/About">About</Link></li>
@@ -28,7 +36,7 @@ const Navbar = () => {
     }
 
     <div className='hidden lg:flex gap-2 items-center '>
-      <p className='border-r-2 px-5 cursor-pointer flex items-center gap-2'>ca: <span className='text-[#c94ff2]'>Comimg Soon</span>  <FiCopy className=' text-[#9fd830]' /></p>
+      <p className='border-r-2 px-5 cursor-pointer flex items-center gap-2'>ca: <span className='text-[#c94ff2]'>Coming Soon</span>  <FiCopy className=' text-[#9fd830]' /></p>
       <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm'><Link 
       // to='/Buybrat'
       to={'https://t.me/bratcoincto'}
@@ -38,7 +46,9 @@ const Navbar = () => {
     <GiHamburgerMenu onClick={() => {setIsActive(!isActive)}} className='text-[#c94ff2]  lg:hidden' />
 
 
-    {isActive && location.pathname.includes('Howtoguide')?
+    {
+    // isActive && 
+    false?
           
           <div className='fixed top-0 left-0 h-screen w-screen bg-black z-50 text-white flex flex-col items-center pt-28 gap-5'>
 
