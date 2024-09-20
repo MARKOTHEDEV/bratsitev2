@@ -24,7 +24,7 @@ const Howtoguide = () => {
 
       <div className='text-[#c94ff2] text-3xl flex gap-4'>
          <a href="http://t.me/bratcoincto" target='_blank'><FaTelegramPlane className='cursor-pointer' /></a> 
-        <a href="https://twitter.com/intent/tweet?text=Hello%20world%21"><FaXTwitter /></a>
+        <a href=" https://x.com/bratcoincto"><FaXTwitter /></a>
       </div>
     </div>
   </div>

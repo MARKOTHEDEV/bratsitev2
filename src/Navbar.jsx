@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import {Link}  from 'react-router-dom'
+import {Link, useLocation}  from 'react-router-dom'
 import bratlogo from '/bratlogo.jpg'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
@@ -10,17 +10,23 @@ import { FiCopy } from "react-icons/fi";
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
-
+      const location = useLocation()
   return (
     <nav className='px-10 md:px-20 flex py-2 justify-between items-center bg-black text-white font-semibold relative '>
-    <div className='bg-[#9fd830]'><img src={bratlogo} alt="bratlogo" className='w-14' /></div>
-    <ul className='hidden lg:flex gap-6 transition-all ease-in'>
-    <li className='hover:text-[#c94ff2]'><Link to="/Home">Home</Link></li>
-    <li className='hover:text-[#c94ff2]'><Link to="/About">About</Link></li>
-      <li className=' cursor-pointer'> <a href="https://pfp.bratsummer.xyz/">Brat Tools</a></li>
-      <li className='hover:text-[#c94ff2] cursor-pointer'><Link to='/Howtoguide'>How to Guide</Link></li>
+    <a
+    href='/'
+    className='bg-[#9fd830] block'><img src={'/logo2.jpeg'} alt="bratlogo" className='w-[100px]' /></a>
+    {
+       !location.pathname.includes('Howtoguide')?
+       <ul className='hidden lg:flex gap-6 transition-all ease-in'>
+       <li className='hover:text-[#c94ff2]'><Link to="/Home">Home</Link></li>
+       <li className='hover:text-[#c94ff2]'><Link to="/About">About</Link></li>
+         <li className=' cursor-pointer'> <a href="https://pfp.bratsummer.xyz/">Brat Tools</a></li>
+         <li className='hover:text-[#c94ff2] cursor-pointer'><Link to='/Howtoguide'>How to Guide</Link></li>
+   
+       </ul>:''
+    }
 
-    </ul>
     <div className='hidden lg:flex gap-2 items-center '>
       <p className='border-r-2 px-5 cursor-pointer flex items-center gap-2'>ca: <span className='text-[#c94ff2]'>Comimg Soon</span>  <FiCopy className=' text-[#9fd830]' /></p>
       <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm'><Link 
@@ -32,7 +38,7 @@ const Navbar = () => {
     <GiHamburgerMenu onClick={() => {setIsActive(!isActive)}} className='text-[#c94ff2]  lg:hidden' />
 
 
-    {isActive ?
+    {isActive && location.pathname.includes('Howtoguide')?
           
           <div className='fixed top-0 left-0 h-screen w-screen bg-black z-50 text-white flex flex-col items-center pt-28 gap-5'>
 
