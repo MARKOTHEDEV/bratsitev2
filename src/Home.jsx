@@ -28,6 +28,7 @@ import Marquee from "react-fast-marquee";
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 import './App.css'
+import WidgetTerminal from './Jupt'
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -104,7 +105,8 @@ const Home = () => {
             <img src={howto4} alt="logo" />
           </div> */}
 
-          <img src={connectwallet} className='w-full md:w-1/2' alt="logo" />
+          {/* <img src={connectwallet} className='w-full md:w-1/2' alt="logo" /> */}
+          <WidgetTerminal/>
         </div>
       </aside>
 

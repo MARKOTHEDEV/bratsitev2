@@ -6,6 +6,7 @@ import Buybrat from './Buybrat'
 import Howtoguide from './Howtoguide';
 import './App.css'
 import Home from './Home';
+import WidgetTerminal from './Jupt';
 
 function App() {
 
