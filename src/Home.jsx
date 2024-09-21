@@ -29,6 +29,7 @@ import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 import './App.css'
 import WidgetTerminal from './Jupt'
+import BratifyText from './BratifyText'
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -116,7 +117,7 @@ const Home = () => {
 
 
 
-      <div  className='bg-[#9fd830] px-16 flex flex-col gap-9 items-center'>
+      <div  className='bg-[black] px-16 flex flex-col gap-9 items-center'>
           {/* <h2 className='font-bold text-[3rem]'>SHOP $BRAT</h2>
           <div className='flex justify-center md:justify-end text-3xl'><IoIosGlobe /></div>
           <div className='flex justify-between  flex-col lg:flex-row gap-4 lg:gap-0'>
@@ -130,7 +131,8 @@ const Home = () => {
           <video width="320" height="240" className='self-center' autoPlay muted loop>
             <source src={videobrat1} type="video/mp4"  />
           </video> */}
-          <img src={stackedbrat} alt=""  className='w-1/2'/>
+          <BratifyText/>
+          {/* <img src={stackedbrat} alt=""  className='w-1/2'/> */}
           <div className='text-white font-bold flex md:justify-end justify-center items-center py-8  gap-5 text-2xl'>
           <a href="http://t.me/bratcoincto" target='_blank'><FaTelegramPlane /></a> 
           <a href="https://x.com/bratcoincto" target='_blank'><FaXTwitter /></a> 
