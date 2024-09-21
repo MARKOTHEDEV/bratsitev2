@@ -30,7 +30,9 @@ const Navbar = () => {
        <li className='hover:text-[#c94ff2]'><Link to="/Home">Home</Link></li>
        <li className='hover:text-[#c94ff2]'><Link to="/About">About</Link></li>
          <li className=' cursor-pointer'> <a href="https://pfp.bratsummer.xyz/">Brat Tools</a></li>
-         <li className='hover:text-[#c94ff2] cursor-pointer'><Link to='https://poap.brat.meme/' target='_blank'>How to Guide</Link></li>
+         <li className='hover:text-[#c94ff2] cursor-pointer'><a 
+      href='/?jup=1'
+         >How to Guide</a></li>
    
        </ul>
        {/* :''
@@ -38,11 +40,13 @@ const Navbar = () => {
 
     <div className='hidden lg:flex gap-2 items-center '>
       <p className='border-r-2 px-5 cursor-pointer flex items-center gap-2'>ca: <span className='text-[#c94ff2]'>Coming Soon</span>  <FiCopy className=' text-[#9fd830]' /></p>
-      <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm'><Link 
-      // to='/Buybrat'
-      to={'https://t.me/bratcoincto'}
-      target='_blank'
-      >JOIN TG</Link></button>
+      <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm'>
+        <a 
+      // to='/#jup'
+      href='/?jup=1'
+      // to={'https://t.me/bratcoincto'}
+      // target='_blank'
+      >Buy Brat</a></button>
     </div>
     <GiHamburgerMenu onClick={() => {setIsActive(!isActive)}} className='text-[#c94ff2]  lg:hidden' />
 
@@ -62,14 +66,19 @@ const Navbar = () => {
               <li>Shop</li>
               <li className='text-[#c94ff2]' onClick={() => {setIsActive(!isActive)}}><Link 
               // to='/Howtoguide'
-              to='https://poap.brat.meme/' target='_blank'
+              // to='https://poap.brat.meme/'
+      href='/?jup=1'
+              
+              // target='_blank'
               >How to Guide</Link></li>
               <li>FAQ</li>
             </ul>
     
             <div className='flex gap-2 flex-col items-center '>
             <p className='px-5 cursor-pointer flex items-center gap-2'>ca : <span className='text-green-400'>Comimg Soon</span>  <FiCopy /></p>
-            <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm' onClick={() => {setIsActive(!isActive)}}><Link to='/Buybrat'>Buy Brat</Link></button>
+            <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm' onClick={() => {setIsActive(!isActive)}}><a 
+      href='/?jup=1'
+            >Buy Brat</a></button>
             </div>
           </div>:
           <></>

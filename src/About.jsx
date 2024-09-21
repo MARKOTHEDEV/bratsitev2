@@ -36,16 +36,19 @@ const About = () => {
           </div>
       </div>
 
-      <div className='flex bg-[#c94ff2] text-white justify-between py-3 gap-5'>
-        <p className='mx-5'>365/365/365</p>
+      <section >
+      <Marquee className='flex bg-[#c94ff2] text-white justify-between px-36 py-3 gap-5 font-extrabold'>
+        <p className='mr-5'>365/365/365</p>
         <p className='mr-5'>BRAT SUMMER</p>
         <p className='mr-5'>24/7 BRAT</p>
         <p className='mr-5'>THE RETAIL COIN</p>
         <p className='mr-5'>BRAT IS FOREVER</p>
-        <p className='mr-5'>KAMALA IS BRAT</p>  
-        <p className='mr-5'>BRAT IS FOREVER</p>
-        
-      </div>
+        <p className='mr-5'>BRAT IS AUTHENTICITY</p>
+        <p className='mr-5'>BRAT IS WINNING</p>
+        <p className='mr-5'>BRAT IS BEING YOURSELF</p>
+        <p className='mr-5'>BRAT IS THE RETAIL COIN</p>
+        </Marquee>
+      </section>
 
       <div className='bg-black px-10 md:px-20 text-white py-20 flex flex-col gap-4 text-[1.5rem]'>
         <h2 className='font-bold'><span className='text-[#9fd830]'>$BRAT</span> Etymology</h2>

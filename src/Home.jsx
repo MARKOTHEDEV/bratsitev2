@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useState } from 'react'
 import videobrat2 from '/videobrat2.mp4'
 import videobrat1 from '/videobrat1.mp4'
-import {Link}  from 'react-router-dom'
+import {Link, useLocation, useNavigate}  from 'react-router-dom'
 
 
 
@@ -31,12 +31,42 @@ import './App.css'
 import WidgetTerminal from './Jupt'
 import BratifyText from './BratifyText'
 
+
+
+
+
+
 const Home = () => {
   const [open, setOpen] = useState(false);
 
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);  
+  const targetSectionRef = useRef(null);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const checkIfParamExists = (param) => {
+    const searchParams = new URLSearchParams(location.search); // Get URLSearchParams object
+    return searchParams.has(param); // Check if the param exists
+  };
 
+  const scrollToSection = () => {
+    targetSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+  const removeUrlParam = () => {
+    // Get the current URL without the query parameters
+    const newUrl = window.location.pathname;
+  
+    // Navigate to the new URL without refreshing the page
+    navigate(newUrl, { replace: true }); // replace ensures it doesn't add to history
+  };
+
+  useEffect(()=>{
+    if(checkIfParamExists('jup')){
+      scrollToSection()
+      removeUrlParam()
+
+    }
+  },[])
   return (
     <div>
         <div className='relative overflow-x-hidden'>
@@ -100,7 +130,10 @@ const Home = () => {
       </div>
       </div>
 
-      <aside className='bg-[#9fd830] md:px-20 px-10 py-24 flex flex-col items-center gap-10'>
+      <div className='bg-[#9fd830] md:px-20 px-10 py-24 flex flex-col items-center gap-10'
+      // style={{border:'1px solid red'}}
+      ref={targetSectionRef}
+      >
         <h2 className='text-[#c94ff2] text-[4.2rem] font-bold text-center'>HOW TO BUY $BRAT</h2>
         <div className='flex flex-col items-center justify-center'>
           {/* <div className='grid md:grid-cols-2 md:grid-rows-2 grid-rows-1 grid-cols-1 w-full md-w-2/3 lg:w-1/2 gap-4'>
@@ -113,11 +146,11 @@ const Home = () => {
           {/* <img src={connectwallet} className='w-full md:w-1/2' alt="logo" /> */}
           <WidgetTerminal/>
         </div>
-      </aside>
+      </div>
 
 
 
-      <div  className='bg-[black] px-16 flex flex-col gap-9 items-center'>
+      <div  className='bg-[black] px-16 flex flex-col gap-9 items-center' >
           {/* <h2 className='font-bold text-[3rem]'>SHOP $BRAT</h2>
           <div className='flex justify-center md:justify-end text-3xl'><IoIosGlobe /></div>
           <div className='flex justify-between  flex-col lg:flex-row gap-4 lg:gap-0'>
