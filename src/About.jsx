@@ -44,6 +44,7 @@ const About = () => {
         <p className='mr-5'>BRAT IS FOREVER</p>
         <p className='mr-5'>KAMALA IS BRAT</p>  
         <p className='mr-5'>BRAT IS FOREVER</p>
+        
       </div>
 
       <div className='bg-black px-10 md:px-20 text-white py-20 flex flex-col gap-4 text-[1.5rem]'>
