@@ -7,6 +7,7 @@ const WidgetTerminal = () => {
       displayMode: "integrated",
       integratedTargetId: "integrated-terminal",
       endpoint: "https://api.mainnet-beta.solana.com",
+      
     });
     
   },[])
@@ -14,7 +15,7 @@ const WidgetTerminal = () => {
   return (
     <div>
       <div id="integrated-terminal" style={{
-  width: "400px",height: "400px"
+  width: "600px",height: "500px"
 }}/>
     </div>
   );

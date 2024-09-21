@@ -14,11 +14,11 @@ function App() {
         <BrowserRouter>
           <Navbar/>
           <Routes>
-            {/* <Route index element={<Home/>}/>
+            <Route index element={<Home/>}/>
             <Route path='/Home' element={<Home/>}/>
             <Route path='/About' element={<About/>}/>
-            <Route path='/Buybrat' element={<Buybrat/>}/> */}
-            <Route path='/' element={<Howtoguide/>}/>
+            <Route path='/Buybrat' element={<Buybrat/>}/> 
+            {/* <Route path='/' element={<Howtoguide/>}/> */}
           </Routes>
         </BrowserRouter>
   )

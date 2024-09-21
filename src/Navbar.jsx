@@ -24,16 +24,17 @@ const Navbar = () => {
         // 'w-[100px]':'w-14'
         'w-14'
       } /></a>
-    {
-       false?
-       <ul className='hidden lg:flex gap-6 transition-all ease-in'>
+    {/* {
+       false? */}
+       <ul className='hidden lg:flex gap-6 transition-all ease-in translate-x-[100px]'>
        <li className='hover:text-[#c94ff2]'><Link to="/Home">Home</Link></li>
        <li className='hover:text-[#c94ff2]'><Link to="/About">About</Link></li>
          <li className=' cursor-pointer'> <a href="https://pfp.bratsummer.xyz/">Brat Tools</a></li>
-         <li className='hover:text-[#c94ff2] cursor-pointer'><Link to='/Howtoguide'>How to Guide</Link></li>
+         <li className='hover:text-[#c94ff2] cursor-pointer'><Link to='https://poap.brat.meme/' target='_blank'>How to Guide</Link></li>
    
-       </ul>:''
-    }
+       </ul>
+       {/* :''
+    } */}
 
     <div className='hidden lg:flex gap-2 items-center '>
       <p className='border-r-2 px-5 cursor-pointer flex items-center gap-2'>ca: <span className='text-[#c94ff2]'>Coming Soon</span>  <FiCopy className=' text-[#9fd830]' /></p>
@@ -47,8 +48,9 @@ const Navbar = () => {
 
 
     {
-    // isActive && 
-    false?
+    isActive?
+     
+    // false? 
           
           <div className='fixed top-0 left-0 h-screen w-screen bg-black z-50 text-white flex flex-col items-center pt-28 gap-5'>
 
@@ -58,7 +60,10 @@ const Navbar = () => {
           <li><Link to="/About" onClick={() => {setIsActive(!isActive)}}>About</Link></li>
               <li><a href="https://pfp.bratsummer.xyz/">Brat Tools</a></li>
               <li>Shop</li>
-              <li className='text-[#c94ff2]' onClick={() => {setIsActive(!isActive)}}><Link to='/Howtoguide'>How to Guide</Link></li>
+              <li className='text-[#c94ff2]' onClick={() => {setIsActive(!isActive)}}><Link 
+              // to='/Howtoguide'
+              to='https://poap.brat.meme/' target='_blank'
+              >How to Guide</Link></li>
               <li>FAQ</li>
             </ul>
     

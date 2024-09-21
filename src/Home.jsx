@@ -84,7 +84,11 @@ const Home = () => {
           </p>
           <div className='flex flex-col md:flex-row md:gap-20 gap-5'>
             <button className='border border-[#9fd830] text-[#9fd830] font-bold bg-gray-800 rounded-xl px-7 py-1'>Buy $BRAT</button>
-            <button className='border border-[#c94ff2] text-[#c94ff2] font-bold bg-gray-800 rounded-xl px-7 py-1'> Join the community </button>
+            <button className='border border-[#c94ff2] text-[#c94ff2] font-bold bg-gray-800 rounded-xl px-7 py-1'
+            onClick={()=>{
+              window.open('https://t.me/bratcoincto','_blank')
+            }}
+            > Join the community </button>
           </div>
         </div>
 
