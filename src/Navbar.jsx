@@ -46,6 +46,7 @@ const Navbar = () => {
       href='/?jup=1'
       // to={'https://t.me/bratcoincto'}
       // target='_blank'
+
       >Buy Brat</a></button>
     </div>
     <GiHamburgerMenu onClick={() => {setIsActive(!isActive)}} className='text-[#c94ff2]  lg:hidden' />

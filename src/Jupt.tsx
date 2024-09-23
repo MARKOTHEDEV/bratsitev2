@@ -13,10 +13,22 @@ const WidgetTerminal = () => {
   },[])
 
   return (
-    <div>
+    <div
+    onClick={e=>{
+      e.stopPropagation()
+      e.preventDefault()
+     const popup = window.open('https://jup.ag/swap/SOL-YAKU', '_blank', 'noopener,noreferrer');
+    }}
+    >
+      <div
+    
+    >
       <div id="integrated-terminal" style={{
   width: "600px",height: "500px"
 }}/>
+    </div>
+
+    <div id="openMiniBrowser" />
     </div>
   );
 };
