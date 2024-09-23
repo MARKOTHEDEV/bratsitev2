@@ -17,7 +17,9 @@ const WidgetTerminal = () => {
     onClick={e=>{
       e.stopPropagation()
       e.preventDefault()
-     const popup = window.open('https://jup.ag/swap/SOL-YAKU', '_blank', 'noopener,noreferrer');
+    //  const popup = window.open('https://jup.ag/swap/SOL-YAKU', '_blank', 'noopener,noreferrer');
+    //  window.open('https://www.example.com', 'newWindow', 'width=800,height=600,toolbar=no,menubar=no,scrollbars=yes,resizable=yes');
+    window.open('https://jup.ag/swap/SOL-YAKU', 'newWindow', 'width=800,height=600,toolbar=no,menubar=no,scrollbars=yes,resizable=yes');
     }}
     >
       <div
@@ -34,3 +36,4 @@ const WidgetTerminal = () => {
 };
 
 export default WidgetTerminal;
+
