@@ -5,7 +5,7 @@ import bratlogo from '/bratlogo.jpg'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 import { FiCopy } from "react-icons/fi";
-
+import copy from 'copy-to-clipboard';
 
 
 const Navbar = () => {
@@ -39,7 +39,13 @@ const Navbar = () => {
     } */}
 
     <div className='hidden lg:flex gap-2 items-center '>
-      <p className='border-r-2 px-5 cursor-pointer flex items-center gap-2'>ca: <span className='text-[#c94ff2]'>Coming Soon</span>  <FiCopy className=' text-[#9fd830]' /></p>
+      <p className='border-r-2 px-5 cursor-pointer flex items-center gap-2'
+      onClick={()=>{
+        copy('8VyyhCLfAnUk7WFpYpMCYf4z9XU5vajNxcpLMe2H1ySj')
+      }}
+      >ca: <span className='text-[#c94ff2]'>
+      ...8Vyyh
+        </span>  <FiCopy className=' text-[#9fd830]' /></p>
       <button className='bg-[#c94ff2] px-4 py-2 rounded-xl text-green-400 text-sm'>
         <a 
       // to='/#jup'
